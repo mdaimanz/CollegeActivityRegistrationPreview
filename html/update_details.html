@@ -113,16 +113,13 @@
 
             <div class="form-group">
                 <label for="ic_num">I/C No.</label>
-                <input type="text" name="ic_num" class="form-control" id="ic_num" value="">
+                <input type="text" name="ic_num" class="form-control" id="ic_num" value="123454-14-2313">
                 <span id='icmessage'></span>
             </div>
 
             <div class="form-group">
                 <label for="gender">Gender</label>
                 <select class="form-control" name="gender">
-                    <?php
-                    echo "<option>" . $gender . "</option>";
-                    ?>
                     <option>Male</option>
                     <option>Female</option>
                 </select>
@@ -131,9 +128,6 @@
             <div class="form-group">
                 <label for="race">Race</label>
                 <select class="form-control" name="race">
-                    <?php
-                    echo "<option>" . $race . "</option>";
-                    ?>
                     <option>Malay</option>
                     <option>Chinese</option>
                     <option>Indian</option>
@@ -144,21 +138,18 @@
             <div class="form-group">
                 <label for="date">Date of Birth</label>
                 <br>
-                <input type="date" name="birthdate" class="form-control" value="<?php echo $birthdate; ?>">
+                <input type="date" name="birthdate" class="form-control" value="">
             </div>
 
             <div class="form-group">
                 <label for="address">Address</label>
-                <input type="text" name="address" class="form-control" id="address" value="<?php echo $address; ?>">
+                <input type="text" name="address" class="form-control" id="address" value="No.5 Jalan Belimbing, Green Valley Park, Rawang 48020, Selangor">
                 <span id='addressmessage'></span>
             </div>
 
             <div class="form-group">
                 <label for="levelStudy">Level of Study</label>
                 <select class="form-control" id="levelStudy" name="levelStudy" placeholder="Choose one">
-                    <?php
-                    echo "<option>" . $levelStudy . "</option>";
-                    ?>
                     <option>Undergraduate</option>
                     <option>Postgraduate</option>
                 </select>
@@ -167,9 +158,6 @@
             <div class="form-group">
                 <label for="faculty">Faculty</label>
                 <select class="form-control" id="faculty" name="faculty" placeholder="Choose one">
-                    <?php
-                    echo "<option>" . $faculty . "</option>";
-                    ?>
                     <option>Faculty of Law</option>
                     <option>Faculty of Engineering</option>
                     <option>Faculty of Medicine</option>
@@ -185,9 +173,6 @@
             <div class="form-group" id="semua">
                 <label for="programme">Programme</label>
                 <select class="form-control" name="programme" id="programmeall" placeholder="Choose one">
-                    <?php
-                    echo "<option selected='selected'>" . $programme . "</option>";
-                    ?>
                     <option class="law">Bachelor of Law</option>
                     <option class="law">Bachelor of Jurisprudence</option>
                     <option class="law">Master of Laws</option>
@@ -317,9 +302,6 @@
             <div class="form-group">
                 <label for="semester">Semester</label>
                 <select class="form-control" placeholder="Choose one" name="semester">
-                    <?php
-                    echo "<option>" . $semester . "</option>";
-                    ?>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -335,11 +317,8 @@
             <div class="form-group">
                 <label for="disability">Disability</label>
                 <select class="form-control" id="disability" placeholder="State your disability" name="disability">
-                    <?php
-                    echo "<option>" . $disability . "</option>";
-                    ?>
-                    <option>Yes</option>
                     <option>No</option>
+                    <option>Yes</option>
                 </select>
             </div>
 
@@ -351,9 +330,7 @@
 
             <div class="form-group">
                 <label for="room">Room</label>
-                <?php
-                echo "<input type='text' class='form-control' id='room' name='room' value='$roomNo'>";
-                ?>
+                <input type='text' class='form-control' id='room' name='room' value='E414'>
             </div>
             <br>
             <h3 class="display-5 my-2">Change Password</h3>
