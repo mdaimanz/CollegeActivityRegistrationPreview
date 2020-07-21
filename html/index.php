@@ -1,1 +1,5 @@
-echo ‘<?php include_once(“manage.html”); ?>’
+<?php 
+
+include_once(“manage.html”); 
+
+?>
